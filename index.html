@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Exam 1 Site</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="index.html">Exam&nbsp;1</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <section class="hero">
+      <h1>Welcome, Jessy! 🎉</h1>
+      <p>This is a basic HTML &amp; CSS website deployed on Vercel.</p>
+      <a class="btn" href="about.html">See more</a>
+    </section>
+  </header>
+
+  <main class="content">
+    <section>
+      <h2>What this includes</h2>
+      <ul>
+        <li>Semantic HTML</li>
+        <li>External CSS file</li>
+        <li>Simple navigation</li>
+        <li>Responsive layout basics</li>
+      </ul>
+    </section>
+    <section>
+      <h2>How to run locally</h2>
+      <ol>
+        <li>Open this folder in VS Code</li>
+        <li>Right–click <code>index.html</code> &rarr; <em>Open with Live Server</em></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>&copy; <span id="year"></span> My Exam 1 Site</small>
+  </footer>
+
+  <script>
+    // tiny enhancement so the year stays current
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
