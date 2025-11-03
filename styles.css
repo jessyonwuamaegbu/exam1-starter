@@ -176,3 +176,31 @@ img{ max-width:100%; height:auto; display:block; }
   .services{ grid-template-columns: 1fr; }
   .contact-wrap{ grid-template-columns: 1fr; }
 }
+/* Testimonials */
+.testimonials {
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 1.2rem;
+}
+.tcard {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #fff;
+  padding: 1rem;
+}
+.quote {
+  margin: 0 0 0.6rem;
+  color: var(--text);
+  font-style: italic;
+}
+.cite {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* Responsive tweak for testimonials */
+@media (max-width: 960px){
+  .testimonials { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 640px){
+  .testimonials { grid-template-columns: 1fr; }
+}
