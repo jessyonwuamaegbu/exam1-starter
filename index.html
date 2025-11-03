@@ -1,47 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Exam 1 Site</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jessy’s Uche(mind) Studios — Freelance Writer</title>
+  <meta name="description" content="Freelance writer for ghostwriting, resume & LinkedIn rewriting, website copy, and editing/proofreading. New York, NY." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav">
-      <a class="logo" href="index.html">Exam&nbsp;1</a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-    <section class="hero">
-      <h1>Welcome, Jessy! 🎉</h1>
-      <p>This is a basic HTML &amp; CSS website deployed on Vercel.</p>
-      <a class="btn" href="about.html">See more</a>
-    </section>
+  <!-- Header / Nav -->
+  <header class="site-header" id="home">
+    <div class="container nav">
+      <a class="logo" href="#home" aria-label="Jessy’s Uche(mind) Studios home">
+        Jessy’s Uche(mind) <span class="logo-light">Studios</span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="btn btn-cta" href="#contact">Get a Quote</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main class="content">
-    <section>
-      <h2>What this includes</h2>
-      <ul>
-        <li>Semantic HTML</li>
-        <li>External CSS file</li>
-        <li>Simple navigation</li>
-        <li>Responsive layout basics</li>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>Beautiful words that stir the heart.</h1>
+        <p class="tagline">Give us the pen.</p>
+        <a class="btn btn-primary" href="#contact">Start Your Project</a>
+      </div>
+      <figure class="hero-visual">
+        <img
+          src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1600&auto=format&fit=crop"
+          alt="Open notebook with pen and soft light"
+          loading="eager"
+        />
+      </figure>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="container">
+      <h2 class="section-title">Services</h2>
+      <p class="section-intro">Clarity, tone, and resonance—delivered on time and in your voice.</p>
+
+      <div class="grid services">
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">✍️</div>
+          <h3>Ghostwriting</h3>
+          <p>Bring your voice to life in articles, essays, scripts, and thought leadership.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">🧭</div>
+          <h3>Resume + LinkedIn Rewriting</h3>
+          <p>Position your story for recruiters and decision-makers with clear, targeted language.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">🕸️</div>
+          <h3>Website Copywriting</h3>
+          <p>Persuasive pages and messaging frameworks that convert visitors into clients.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">📝</div>
+          <h3>Editing & Proofreading</h3>
+          <p>Line-level polish, consistency, and care—for manuscripts, decks, and web content.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section section-alt" id="about">
+    <div class="container">
+      <h2 class="section-title">About Jessy’s Uche(mind) Studios</h2>
+      <p class="lead">
+        Words shape how people see you. I help founders, professionals, and creatives say the right thing—
+        clearly, beautifully, and on time. My process is simple: listen closely, draft intentionally,
+        refine with care.
+      </p>
+      <ul class="bullets">
+        <li>Voice-first approach: your tone, elevated with precision.</li>
+        <li>Structure for impact: headlines, flow, and calls-to-action that work.</li>
+        <li>From ideas to final draft: research, outline, write, polish.</li>
       </ul>
-    </section>
+    </div>
+  </section>
 
-  </main>
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-wrap">
+        <form class="form" aria-labelledby="contact-form-title">
+          <h3 id="contact-form-title" class="visually-hidden">Contact form</h3>
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" placeholder="Your full name" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            <span>Phone</span>
+            <input type="tel" name="phone" placeholder="333-333-3333" />
+          </label>
+          <label>
+            <span>Project Details</span>
+            <textarea name="message" rows="5" placeholder="Tell me about your project, goals, and timeline"></textarea>
+          </label>
+          <button class="btn btn-primary" type="button" aria-disabled="true" title="Form is a visual demo only">
+            Send
+          </button>
+          <p class="form-note">This form is a demo (no backend). Please use the email or phone to get in touch.</p>
+        </form>
 
+        <aside class="contact-info">
+          <div class="panel">
+            <h3>Get in touch</h3>
+            <p><strong>Email:</strong> <a href="mailto:contact@jessysuche.com">contact@jessysuche.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:3333333333">333-333-3333</a></p>
+            <p><strong>Location:</strong> New York, NY</p>
+            <p><strong>Hours:</strong> Mon–Fri, 9am–6pm</p>
+            <div class="map">
+              <img src="https://via.placeholder.com/600x360?text=Map+placeholder"
+                   alt="Map placeholder: New York, NY" loading="lazy" />
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer class="site-footer">
-    <small>&copy; <span id="year"></span> My Exam 1 Site</small>
+    <div class="container footer-inner">
+      <a class="logo small" href="#home">Jessy’s Uche(mind) <span class="logo-light">Studios</span></a>
+      <ul class="social">
+        <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+        <li><a href="#" aria-label="Instagram">Instagram</a></li>
+      </ul>
+      <p class="copyright">© 2025 Jessy’s Uche(mind) Studios. All rights reserved.</p>
+      <a class="back-to-top" href="#home" aria-label="Back to top">↑ Back to top</a>
+    </div>
   </footer>
-
-  <script>
-    // tiny enhancement so the year stays current
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
